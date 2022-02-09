@@ -55,6 +55,9 @@
             <li><a href="../Card/card.html">Cards</a></li>
             <li><a href="../Image/image.html">Images</a></li>
             <li><a href="../Input/input.html">Inputs</a></li>
+            <li><a href="../Lists/lists.html">Lists</a></li>
+            <li><a href="../Text/text.html">Text Utilities</a></li>
+            <li><a href="../Toast/toast.html">Toast</a></li>
           </ul>
         </aside>
         <div class="page-content">
@@ -86,20 +89,27 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <pre class="code-examples">
               <code class="language-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"login-inputs"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Username *<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"password"</span>&gt;</span>Password *<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password"</span> /&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"error-message"</span>&gt;</span>Wrong Password. Try again.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"drawer-container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Mailbox<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-items"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Inbox<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Starred<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Drafts<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             </code>
@@ -148,18 +158,31 @@
 
             <pre class="code-examples">
               <code class="language-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"radio-input-group"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"checked-radio"</span>&gt;</span>Checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"checked-radio"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"unchecked-radio"</span>&gt;</span>Unchecked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"unchecked-radio"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled-radio"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled-radio"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"drawer-container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Mailbox<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-items"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Inbox<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Starred<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Sent<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nested-nav-item"</span>&gt;</span>
+                Today<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nested-nav-item"</span>&gt;</span>
+                This Week<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nested-nav-item"</span>&gt;</span>
+                This Month<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Drafts<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             </code>
@@ -194,23 +217,30 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <pre class="code-examples">
               <code class="language-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox-input-group"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"checked-checbox"</span>&gt;</span>Checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"checked-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"unchecked-checkbox"</span>&gt;</span>Unchecked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"unchecked-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled-checkbox"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"drawer-container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Filters<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-items"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Thrillers<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Romance<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Drama<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             </code>
@@ -240,23 +270,30 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <pre class="code-examples">
               <code class="language-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox-input-group"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"checked-checbox"</span>&gt;</span>Checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"checked-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"unchecked-checkbox"</span>&gt;</span>Unchecked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"unchecked-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled-checkbox"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
-    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"drawer-container stacked"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Notifications<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-items"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fab fa-whatsapp"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;
+            </span>Message from Tejas (1)<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fab fa-whatsapp"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;
+            </span>Message from Tanay (3)<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fab fa-instagram"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;
+            </span>Manish liked your post<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             </code>
@@ -264,10 +301,10 @@
           </div>
 
           <span class="last"
-            ><a href="../Image/image.html">&lt; Images</a></span
+            ><a href="../Input/input.html">&lt; Inputs</a></span
           >
           <span class="next"
-            ><a href="../Homepage/homepage.html">End &gt;</a></span
+            ><a href="../Text/text.html">Text Utilities &gt;</a></span
           >
         </div>
       </div>
